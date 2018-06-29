@@ -1,6 +1,7 @@
 import Hotel.Guest;
 import Hotel.Rooms.Bedroom;
 import Hotel.Rooms.ConferenceRoom;
+import Hotel.Rooms.RoomType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -19,7 +20,7 @@ public class ConferenceRoomTest {
         guest = new Guest("Iona");
         guests = new ArrayList<>();
         guests.add(guest);
-        conferenceRoom = new ConferenceRoom(25, guests, "Lovelace", 150);
+        conferenceRoom = new ConferenceRoom(RoomType.CONFERENCEROOM, guests, "Lovelace", 150);
     }
 
     @Test
@@ -51,7 +52,7 @@ public class ConferenceRoomTest {
 
     @Test
     public void canGetCapacity(){
-        assertEquals(25, conferenceRoom.getCapacity());
+        assertEquals(50, conferenceRoom.getCapacity());
     }
 
 }

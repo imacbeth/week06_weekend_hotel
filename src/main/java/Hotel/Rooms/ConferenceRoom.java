@@ -1,5 +1,6 @@
 package Hotel.Rooms;
 
+import Hotel.Rooms.RoomType;
 import Hotel.Guest;
 
 import java.util.ArrayList;
@@ -11,8 +12,8 @@ public class ConferenceRoom extends Room {
     private int dailyRate;
 
 
-    public ConferenceRoom(int capacity, ArrayList<Guest> guests, String roomName, int dailyRate){
-        super(capacity, guests);
+    public ConferenceRoom(RoomType roomType, ArrayList<Guest> guests, String roomName, int dailyRate){
+        super(roomType, guests);
         this.roomName = roomName;
         this.dailyRate = dailyRate;
     }

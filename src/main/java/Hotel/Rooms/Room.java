@@ -22,5 +22,8 @@ public abstract class Room {
         return this.roomType.getCapacity();
     }
 
+    public RoomType getRoomType(){
+        return roomType;
+    }
 
 }
