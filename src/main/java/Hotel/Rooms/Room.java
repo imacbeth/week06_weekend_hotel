@@ -4,6 +4,7 @@ import Hotel.Guest;
 
 import java.util.ArrayList;
 
+
 public abstract class Room {
 
     private RoomType roomType;
@@ -26,4 +27,7 @@ public abstract class Room {
         return roomType;
     }
 
+    public void checkGuestsIntoRoom(Guest guest) {
+        guests.add(guest);
+    }
 }
