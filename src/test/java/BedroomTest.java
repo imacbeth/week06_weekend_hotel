@@ -32,4 +32,15 @@ public class BedroomTest {
         assertEquals(205, bedroom.getRoomNumber());
     }
 
+    @Test
+    public void canGetNightlyRate(){
+        assertEquals(50, bedroom.getNightlyRate());
+    }
+
+    @Test
+    public void canSetNightlyRate(){
+        bedroom.setNightlyRate(100);
+        assertEquals(100, bedroom.getNightlyRate());
+    }
+
 }

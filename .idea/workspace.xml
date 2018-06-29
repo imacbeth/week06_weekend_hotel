@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="12854d64-0e9e-4a24-85ca-f2ba57fb1b97" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Hotel/Rooms/Bedroom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hotel/Rooms/Bedroom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BedroomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BedroomTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="12854d64-0e9e-4a24-85ca-f2ba57fb1b97" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -105,8 +102,8 @@
       <file leaf-file-name="BedroomTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/BedroomTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+            <state relative-caret-position="313">
+              <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#452#453#0" expanded="true" />
@@ -449,8 +446,8 @@
         <option value="$PROJECT_DIR$/src/test/java/GuestTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Hotel/Guest.java" />
         <option value="$PROJECT_DIR$/src/test/java/RoomTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/BedroomTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Hotel/Rooms/Bedroom.java" />
+        <option value="$PROJECT_DIR$/src/test/java/BedroomTest.java" />
       </list>
     </option>
   </component>
@@ -546,9 +543,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BedroomTest.canSetRoomNumber">
+  <component name="RunManager" selected="JUnit.BedroomTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="BedroomTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hotelhomework_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BedroomTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration name="BedroomTest.canGetRoomNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hotelhomework_test" />
@@ -618,23 +632,6 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="RoomTest.hasCapacity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="hotelhomework_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RoomTest" />
-      <option name="METHOD_NAME" value="hasCapacity" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -674,19 +671,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.RoomTest.hasCapacity" />
       <item itemvalue="JUnit.RoomTest.canSetCapacity" />
       <item itemvalue="JUnit.GuestTest.hasName" />
       <item itemvalue="JUnit.BedroomTest.canGetRoomNumber" />
       <item itemvalue="JUnit.BedroomTest.canSetRoomNumber" />
+      <item itemvalue="JUnit.BedroomTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BedroomTest" />
         <item itemvalue="JUnit.BedroomTest.canSetRoomNumber" />
         <item itemvalue="JUnit.BedroomTest.canGetRoomNumber" />
         <item itemvalue="JUnit.GuestTest.hasName" />
         <item itemvalue="JUnit.RoomTest.canSetCapacity" />
-        <item itemvalue="JUnit.RoomTest.hasCapacity" />
       </list>
     </recent_temporary>
   </component>
@@ -715,6 +712,12 @@
     </history-entry>
     <history-entry file="GuestTest_hasName - 2018.06.29 at 11h 47m 27s.xml">
       <configuration name="GuestTest.hasName" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BedroomTest_canGetRoomNumber - 2018.06.29 at 12h 00m 23s.xml">
+      <configuration name="BedroomTest.canGetRoomNumber" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BedroomTest_canSetRoomNumber - 2018.06.29 at 12h 03m 35s.xml">
+      <configuration name="BedroomTest.canSetRoomNumber" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -855,8 +858,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/BedroomTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+        <state relative-caret-position="313">
+          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#452#453#0" expanded="true" />

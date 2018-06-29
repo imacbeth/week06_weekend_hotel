@@ -24,4 +24,12 @@ public class Bedroom extends Room {
     public void setRoomNumber(int roomNumber) {
         this.roomNumber = roomNumber;
     }
+
+    public int getNightlyRate() {
+        return this.nightlyRate;
+    }
+
+    public void setNightlyRate(int nightlyRate) {
+        this.nightlyRate = nightlyRate;
+    }
 }
