@@ -6,22 +6,22 @@ import java.util.ArrayList;
 
 public class Bedroom extends Room {
 
-    private int roomNumber;
+    private String roomNumber;
     private int nightlyRate;
 
 
-    public Bedroom(int capacity, ArrayList<Guest> guests, int roomNumber, int nightlyRate){
-        super(2, guests);
+    public Bedroom(int capacity, ArrayList<Guest> guests, String roomNumber, int nightlyRate){
+        super(capacity, guests);
         this.roomNumber = roomNumber;
         this.nightlyRate = nightlyRate;
     }
 
 
-    public int getRoomNumber() {
+    public String getRoomNumber() {
         return this.roomNumber;
     }
 
-    public void setRoomNumber(int roomNumber) {
+    public void setRoomNumber(String roomNumber) {
         this.roomNumber = roomNumber;
     }
 
