@@ -43,4 +43,11 @@ public class BedroomTest {
         assertEquals(100, bedroom.getNightlyRate());
     }
 
+    @Test
+    public void canGetGuests(){
+        assertEquals(1, bedroom.getGuests().size());
+    }
+
+
+
 }
