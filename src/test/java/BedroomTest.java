@@ -16,7 +16,7 @@ public class BedroomTest {
 
     @Before
     public void before(){
-        guest = new Guest("Iona");
+        guest = new Guest("Iona", 200);
         guests = new ArrayList<>();
         guests.add(guest);
         bedroom = new Bedroom(RoomType.DOUBLE, guests, "105", 50);
@@ -63,6 +63,13 @@ public class BedroomTest {
     public void canAddGuest(){
         bedroom.checkGuestsIntoRoom(guest);
         assertEquals(2, bedroom.getGuests().size());
+    }
+
+    @Test
+    public void canCheckGuestsOut(){
+        bedroom.checkGuestsIntoRoom(guest);
+        bedroom.checkGuestsOutOfRoom();
+        assertEquals(0, bedroom.getGuests().size());
     }
 
 }

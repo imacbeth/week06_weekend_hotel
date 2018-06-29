@@ -12,7 +12,6 @@ public class Hotel {
     private ArrayList<Guest> guests;
 
     public Hotel(ArrayList<Bedroom> bedrooms, ArrayList<ConferenceRoom> conferenceRooms,ArrayList<DiningRoom> diningRooms){
-
         this.bedrooms = bedrooms;
         this.conferenceRooms = conferenceRooms;
         this.diningRooms = diningRooms;

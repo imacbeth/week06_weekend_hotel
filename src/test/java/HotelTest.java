@@ -22,7 +22,7 @@ public class HotelTest {
 
     @Before
     public void before(){
-        Guest guest = new Guest("Iona");
+        Guest guest = new Guest("Iona", 200);
         guests = new ArrayList<>();
         Bedroom bedroom1 = new Bedroom(RoomType.DOUBLE, guests,"105", 50 );
 

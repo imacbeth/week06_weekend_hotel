@@ -17,7 +17,7 @@ public class DiningRoomTest {
 
     @Before
     public void before(){
-        guest = new Guest("Iona");
+        guest = new Guest("Iona", 200);
         guests = new ArrayList<>();
         guests.add(guest);
         diningRoom = new DiningRoom(RoomType.DININGROOM, guests);

@@ -30,4 +30,8 @@ public abstract class Room {
     public void checkGuestsIntoRoom(Guest guest) {
         guests.add(guest);
     }
+
+    public void checkGuestsOutOfRoom(){
+        guests.clear();
+    }
 }
