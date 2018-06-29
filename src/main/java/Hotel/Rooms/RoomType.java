@@ -1,20 +1,19 @@
 package Hotel.Rooms;
 
 public enum RoomType {
-    SINGLE(1, 50, "Single"),
-    DOUBLE(2, 75, "Double"),
-    SUITE(5, 125, "Suite"),
-    DININGROOM(100, 0, "Dining Room"),
-    CONFERENCEROOM(50, 150, "Conference Room");
+    SINGLE(1, 50),
+    DOUBLE(2, 75),
+    SUITE(5, 125),
+    DININGROOM(100, 0),
+    CONFERENCEROOM(50, 150);
 
     private int capacity;
     private double price;
-    private String roomName;
 
-    RoomType(int capacity, int price, String roomName){
+
+    RoomType(int capacity, double price){
         this.capacity = capacity;
         this.price = price;
-        this.roomName = roomName;
     }
 
     public int getCapacity(){
@@ -25,7 +24,4 @@ public enum RoomType {
         return this.price;
     }
 
-    public String getRoomName(){
-        return this.roomName;
-    }
 }

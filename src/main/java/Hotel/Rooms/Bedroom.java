@@ -8,6 +8,7 @@ public class Bedroom extends Room {
 
     private String roomNumber;
     private int nightlyRate;
+    private RoomType roomType;
 
 
     public Bedroom(int capacity, ArrayList<Guest> guests, String roomNumber, int nightlyRate){

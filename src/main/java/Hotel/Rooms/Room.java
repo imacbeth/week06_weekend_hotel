@@ -6,11 +6,11 @@ import java.util.ArrayList;
 
 public abstract class Room {
 
-    private int capacity;
+    private RoomType roomType;
     private ArrayList<Guest> guests;
 
-    public Room(int capacity, ArrayList<Guest> guests){
-        this.capacity = capacity;
+    public Room(RoomType roomType, ArrayList<Guest> guests){
+        this.roomType = roomType;
         this.guests = guests;
     }
 
@@ -19,10 +19,11 @@ public abstract class Room {
     }
 
     public int getCapacity() {
-        return this.capacity;
+        return this.roomType.getCapacity();
     }
 
-    public void setCapacity(int capacity) {
-        this.capacity = capacity;
+    public double getPrice(){
+        return this.roomType.getPrice();
     }
+
 }
