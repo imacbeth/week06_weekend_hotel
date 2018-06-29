@@ -8,7 +8,7 @@ public class DiningRoom extends Room {
 
     private RoomType roomType;
 
-    public DiningRoom(RoomType roomType, ArrayList<Guest> guests, String roomNumber, double nightlyRate) {
+    public DiningRoom(RoomType roomType, ArrayList<Guest> guests) {
         super(roomType, guests);
     }
 }
