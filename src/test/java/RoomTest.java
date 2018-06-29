@@ -16,11 +16,5 @@ public class RoomTest {
        assertEquals(2, room.getCapacity());
    }
 
-   @Test
-    public void canSetCapacity(){
-        room.setCapacity(4);
-        assertEquals(4, room.getCapacity());
-   }
-
 
 }

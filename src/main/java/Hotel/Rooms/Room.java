@@ -22,8 +22,5 @@ public abstract class Room {
         return this.roomType.getCapacity();
     }
 
-    public double getPrice(){
-        return this.roomType.getPrice();
-    }
 
 }
