@@ -72,4 +72,11 @@ public class BedroomTest {
         assertEquals(0, bedroom.getGuests().size());
     }
 
+    @Test
+    public void canCheckIfRoomIsBooked(){
+        bedroom.checkGuestsIntoRoom(guest);
+        assertEquals(true, bedroom.isBooked());
+    }
+
+
 }

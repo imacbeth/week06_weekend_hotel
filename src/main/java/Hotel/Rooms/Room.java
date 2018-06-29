@@ -34,4 +34,11 @@ public abstract class Room {
     public void checkGuestsOutOfRoom(){
         guests.clear();
     }
+
+    public boolean isBooked(){
+        boolean booked = false;
+        if (guests.size() > 0)
+        {booked = true;}
+        return booked;
+    }
 }

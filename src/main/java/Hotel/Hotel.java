@@ -18,6 +18,7 @@ public class Hotel {
     }
 
 
+
 //    public void checkGuestsIntoBedrooms(Guest guest, ArrayList<Bedroom> bedrooms){
 //        findBedroom(RoomType);
 //        if (bedrooms.getGuests().size == 0){
@@ -29,7 +30,8 @@ public class Hotel {
     public Bedroom findBedroom(RoomType roomType) {
         Bedroom availableBedroom = null;
         for (Bedroom bedroom : bedrooms) {
-            if (roomType == roomType) {
+            if ((bedroom.getRoomType() == roomType) && !bedroom.isBooked())
+            {
                 availableBedroom = bedroom;
             }
         }

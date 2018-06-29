@@ -8,21 +8,21 @@ public enum RoomType {
     CONFERENCEROOM(50, "Conference");
 
     private int capacity;
-    private String roomType;
+    private String roomName;
 
 
 
-    RoomType(int capacity, String roomType){
+    RoomType(int capacity, String roomName){
         this.capacity = capacity;
-        this.roomType = roomType;
+        this.roomName = roomName;
     }
 
     public int getCapacity(){
         return this.capacity;
     }
 
-    public String getRoomType(){
-        return this.roomType;
+    public String getRoomName(){
+        return this.roomName;
     }
 
 
