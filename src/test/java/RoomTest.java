@@ -12,12 +12,6 @@ public class RoomTest {
     Room room;
 
 
-    @Before
-    public void before(){
-        ArrayList<Guest> testGuests = new ArrayList<>();
-        room = new Room(2, testGuests);
-    }
-
    @Test
     public void hasCapacity(){
        assertEquals(2, room.getCapacity());
@@ -28,4 +22,6 @@ public class RoomTest {
         room.setCapacity(4);
         assertEquals(4, room.getCapacity());
    }
+
+
 }

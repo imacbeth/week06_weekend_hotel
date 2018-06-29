@@ -4,7 +4,7 @@ import Hotel.Guest;
 
 import java.util.ArrayList;
 
-public class Room {
+public abstract class Room {
 
     private int capacity;
     private ArrayList<Guest> guests;
