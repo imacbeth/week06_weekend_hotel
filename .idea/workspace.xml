@@ -553,7 +553,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BedroomTest.canGetGuests">
+  <component name="RunManager" selected="JUnit.BedroomTest.canGetCapacity">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -565,6 +565,23 @@
       <option name="MAIN_CLASS_NAME" value="BedroomTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="BedroomTest.canGetCapacity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hotelhomework_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BedroomTest" />
+      <option name="METHOD_NAME" value="canGetCapacity" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -625,23 +642,6 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="GuestTest.hasName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="hotelhomework_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GuestTest" />
-      <option name="METHOD_NAME" value="hasName" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -681,19 +681,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.GuestTest.hasName" />
       <item itemvalue="JUnit.BedroomTest.canGetRoomNumber" />
       <item itemvalue="JUnit.BedroomTest.canSetRoomNumber" />
       <item itemvalue="JUnit.BedroomTest" />
       <item itemvalue="JUnit.BedroomTest.canGetGuests" />
+      <item itemvalue="JUnit.BedroomTest.canGetCapacity" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BedroomTest.canGetCapacity" />
         <item itemvalue="JUnit.BedroomTest.canGetGuests" />
         <item itemvalue="JUnit.BedroomTest" />
         <item itemvalue="JUnit.BedroomTest.canSetRoomNumber" />
         <item itemvalue="JUnit.BedroomTest.canGetRoomNumber" />
-        <item itemvalue="JUnit.GuestTest.hasName" />
       </list>
     </recent_temporary>
   </component>

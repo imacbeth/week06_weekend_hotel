@@ -48,6 +48,10 @@ public class BedroomTest {
         assertEquals(1, bedroom.getGuests().size());
     }
 
+    @Test
+    public void canGetCapacity(){
+        assertEquals(2, bedroom.getCapacity());
+    }
 
 
 }
