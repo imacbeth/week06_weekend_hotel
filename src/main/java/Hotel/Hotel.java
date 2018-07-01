@@ -25,13 +25,30 @@ public class Hotel {
         return this.conferenceRooms;
     }
 
-    public void checkGuestsIntoBedroom(Guest guest, String roomName){
+    public void checkGuestsIntoRoom(Guest guest, String roomName){
         Bedroom selectedBedroom = this.findBedroom(roomName);
-        if (selectedBedroom.isBooked() == false){
+        if (!selectedBedroom.isBooked()){
             selectedBedroom.checkGuestsIntoRoom(guest);
+        return;
+        }
+        ConferenceRoom selectedConferenceRoom = this.findConferenceRoom(roomName);
+        if (!selectedConferenceRoom.isBooked()){
+            selectedConferenceRoom.checkGuestsIntoRoom(guest);
         }
     }
 
+
+    public void checkGuestsOutOfRoom(String roomName){
+        Bedroom selectedBedroom = this.findBedroom(roomName);
+        if (selectedBedroom.isBooked()){
+            selectedBedroom.checkGuestsOutOfRoom();
+            return;
+        }
+        ConferenceRoom selectedConferenceRoom = this.findConferenceRoom(roomName);
+        if (selectedConferenceRoom.isBooked()){
+            selectedConferenceRoom.checkGuestsOutOfRoom();
+        }
+    }
 
     public Bedroom findBedroom(String roomName) {
         Bedroom availableBedroom = null;

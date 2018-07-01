@@ -40,9 +40,6 @@ public abstract class Room {
     }
 
     public boolean isBooked(){
-        boolean booked = false;
-        if (guests.size() > 0)
-        {booked = true;}
-        return booked;
+        return (guests.size() > 0);
     }
 }
