@@ -39,7 +39,7 @@ public abstract class Room {
         guests.clear();
     }
 
-    public boolean isBooked(){
-        return (guests.size() > 0);
+    public boolean isNotBooked(){
+        return (guests.size() == 0);
     }
 }

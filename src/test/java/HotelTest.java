@@ -35,14 +35,16 @@ public class HotelTest {
         bedrooms.add(bedroom1);
         bedrooms.add(bedroom2);
         conferenceRoom = new ConferenceRoom(RoomType.CONFERENCEROOM, guests, "Lovelace", 150);
+        conferenceRooms = new ArrayList<>();
+        conferenceRooms.add(conferenceRoom);
         diningRoom = new DiningRoom(RoomType.DININGROOM, guests);
         hotel = new Hotel(bedrooms, conferenceRooms, diningRooms);
     }
 
     @Test
     public void canCheckGuestsIntoRoom(){
-        hotel.checkGuestsIntoRoom(guest, "Double");
-    assertEquals(1, bedroom1.getGuests().size());
+        hotel.checkGuestsIntoRoom(guest, "Lovelace");
+    assertEquals(1, conferenceRoom.getGuests().size());
     }
 
     @Test
@@ -55,6 +57,12 @@ public class HotelTest {
     @Test
     public void canFindBedroomByType(){
         assertEquals(RoomType.DOUBLE, hotel.findBedroom("Double").getRoomType());
+    }
+
+    @Test
+    public void canFindGuestsPerRoom() {
+        hotel.checkGuestsIntoRoom(guest, "Suite");
+        assertEquals(1, hotel.getGuestsPerRoom("Suite").size());
     }
 
 }

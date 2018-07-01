@@ -27,25 +27,25 @@ public class Hotel {
 
     public void checkGuestsIntoRoom(Guest guest, String roomName){
         Bedroom selectedBedroom = this.findBedroom(roomName);
-        if (!selectedBedroom.isBooked()){
-            selectedBedroom.checkGuestsIntoRoom(guest);
-        return;
-        }
+            if (selectedBedroom != null && selectedBedroom.isNotBooked()){
+                selectedBedroom.checkGuestsIntoRoom(guest);
+            return;
+            }
         ConferenceRoom selectedConferenceRoom = this.findConferenceRoom(roomName);
-        if (!selectedConferenceRoom.isBooked()){
-            selectedConferenceRoom.checkGuestsIntoRoom(guest);
-        }
+            if (selectedConferenceRoom != null && selectedConferenceRoom.isNotBooked()){
+                selectedConferenceRoom.checkGuestsIntoRoom(guest);
+            }
     }
 
 
     public void checkGuestsOutOfRoom(String roomName){
         Bedroom selectedBedroom = this.findBedroom(roomName);
-        if (selectedBedroom.isBooked()){
+        if (selectedBedroom != null){
             selectedBedroom.checkGuestsOutOfRoom();
             return;
         }
         ConferenceRoom selectedConferenceRoom = this.findConferenceRoom(roomName);
-        if (selectedConferenceRoom.isBooked()){
+        if (selectedConferenceRoom != null){
             selectedConferenceRoom.checkGuestsOutOfRoom();
         }
     }
@@ -70,7 +70,6 @@ public class Hotel {
             }
         }
         return selectedConferenceRoom;
-
     }
 
     public DiningRoom findDiningRoom(String roomName) {
@@ -82,24 +81,21 @@ public class Hotel {
             }
         }
         return selectedDiningRoom;
-
     }
+
     public ArrayList<Guest> getGuestsPerRoom(String roomName){
         Bedroom selectedBedroom = this.findBedroom(roomName);
         if (selectedBedroom != null){
             return selectedBedroom.getGuests();
         }
-
         ConferenceRoom selectedConferenceRoom = this.findConferenceRoom(roomName);
         if (selectedConferenceRoom != null){
             return selectedConferenceRoom.getGuests();
         }
-
         DiningRoom selectedDiningRoom = this.findDiningRoom(roomName);
         if (selectedDiningRoom != null){
             return selectedDiningRoom.getGuests();
         }
-
         return null;
     }
 

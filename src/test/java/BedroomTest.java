@@ -75,7 +75,7 @@ public class BedroomTest {
     @Test
     public void canCheckIfRoomIsBooked(){
         bedroom.checkGuestsIntoRoom(guest);
-        assertEquals(true, bedroom.isBooked());
+        assertEquals(true, bedroom.isNotBooked());
     }
 
 
