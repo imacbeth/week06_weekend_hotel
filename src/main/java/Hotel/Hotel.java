@@ -17,25 +17,38 @@ public class Hotel {
         this.diningRooms = diningRooms;
     }
 
+    public ArrayList<Bedroom> getBedrooms(){
+        return this.bedrooms;
+    }
+
+    public ArrayList<ConferenceRoom> getConferenceRooms() {
+        return this.conferenceRooms;
+    }
+
+    public void checkGuestsIntoBedroom(Guest guest, String roomName){
+        Bedroom selectedBedroom = this.findBedroom(roomName);
+        if (selectedBedroom.isBooked() == false){
+            selectedBedroom.checkGuestsIntoRoom(guest);
+        }
+    }
 
 
-//    public void checkGuestsIntoBedrooms(Guest guest, ArrayList<Bedroom> bedrooms){
-//        findBedroom(RoomType);
-//        if (bedrooms.getGuests().size == 0){
-//            bedrooms.checkGuestsIntoRoom(guest);
-//        }
-//    }
-
-
-    public Bedroom findBedroom(RoomType roomType) {
+    public Bedroom findBedroom(String roomName) {
         Bedroom availableBedroom = null;
         for (Bedroom bedroom : bedrooms) {
-            if ((bedroom.getRoomType() == roomType) && !bedroom.isBooked())
+            if ((bedroom.getRoomName() == roomName) && !bedroom.isBooked())
             {
                 availableBedroom = bedroom;
             }
         }
         return availableBedroom;
+    }
+
+    public ArrayList<Guest> getGuestsPerRoom(String roomName){
+        Bedroom selectedBedroom = this.findBedroom(roomName);
+        if (selectedBedroom != null){
+            return selectedBedroom.getGuests();
+        }
     }
 
 }

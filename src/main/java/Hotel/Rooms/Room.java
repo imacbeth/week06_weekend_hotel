@@ -23,6 +23,10 @@ public abstract class Room {
         return this.roomType.getCapacity();
     }
 
+    public String getRoomName() {
+        return this.roomType.getRoomName();
+    }
+
     public RoomType getRoomType(){
         return roomType;
     }
