@@ -36,7 +36,7 @@ public class Hotel {
     public Bedroom findBedroom(String roomName) {
         Bedroom availableBedroom = null;
         for (Bedroom bedroom : bedrooms) {
-            if ((bedroom.getRoomName() == roomName) && !bedroom.isBooked())
+            if (bedroom.getRoomName() == roomName)
             {
                 availableBedroom = bedroom;
             }
@@ -44,12 +44,49 @@ public class Hotel {
         return availableBedroom;
     }
 
+    public ConferenceRoom findConferenceRoom(String roomName) {
+        ConferenceRoom selectedConferenceRoom = null;
+        for (ConferenceRoom conferenceRoom : conferenceRooms) {
+            if (conferenceRoom.getRoomName() == roomName)
+            {
+                selectedConferenceRoom = conferenceRoom;
+            }
+        }
+        return selectedConferenceRoom;
+
+    }
+
+    public DiningRoom findDiningRoom(String roomName) {
+        DiningRoom selectedDiningRoom = null;
+        for (DiningRoom diningRoom : diningRooms) {
+            if (diningRoom.getRoomName() == roomName)
+            {
+                selectedDiningRoom = diningRoom;
+            }
+        }
+        return selectedDiningRoom;
+
+    }
     public ArrayList<Guest> getGuestsPerRoom(String roomName){
         Bedroom selectedBedroom = this.findBedroom(roomName);
         if (selectedBedroom != null){
             return selectedBedroom.getGuests();
         }
+
+        ConferenceRoom selectedConferenceRoom = this.findConferenceRoom(roomName);
+        if (selectedConferenceRoom != null){
+            return selectedConferenceRoom.getGuests();
+        }
+
+        DiningRoom selectedDiningRoom = this.findDiningRoom(roomName);
+        if (selectedDiningRoom != null){
+            return selectedDiningRoom.getGuests();
+        }
+
+        return null;
     }
+
+
 
 }
 

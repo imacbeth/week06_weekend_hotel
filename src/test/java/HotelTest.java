@@ -28,8 +28,8 @@ public class HotelTest {
     public void before(){
         Guest guest = new Guest("Iona", 200);
         guests = new ArrayList<>();
-        bedroom1 = new Bedroom(RoomType.DOUBLE, guests,"105", 50 );
-        bedroom2 = new Bedroom(RoomType.SUITE, guests,"215", 125);
+        Bedroom bedroom1 = new Bedroom(RoomType.DOUBLE, guests,"105", 50 );
+        Bedroom bedroom2 = new Bedroom(RoomType.SUITE, guests,"215", 125);
         bedrooms = new ArrayList<>();
         bedrooms.add(bedroom1);
         bedrooms.add(bedroom2);
@@ -39,7 +39,7 @@ public class HotelTest {
     @Test
     public void canCheckGuestsIntoRoom(){
         hotel.checkGuestsIntoBedroom(guest, "Double");
-    assertEquals(1, bedroom.getGuests().size());
+    assertEquals();
 
     }
 
@@ -47,7 +47,7 @@ public class HotelTest {
 
     @Test
     public void canFindBedroomByType(){
-        assertEquals(RoomType.DOUBLE, hotel.findBedroom(RoomType.DOUBLE).getRoomType());
+        assertEquals(RoomType.DOUBLE, hotel.findBedroom("Double").getRoomType());
     }
 
 }
